@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-kotlin
+  profiles:
+    active: local
+  config:
+    import:
+      - logging.yml
+      - db-main.yml
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+---
