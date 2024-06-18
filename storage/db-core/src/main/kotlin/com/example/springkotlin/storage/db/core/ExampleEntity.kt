@@ -4,9 +4,9 @@ import jakarta.persistence.Column
 import jakarta.persistence.Entity
 
 @Entity
-class ExampleEntity(
+internal class ExampleEntity(
 
     @Column
-    val exampleColumn: String
+    val exampleColumn: String,
 
 ): BaseEntity()

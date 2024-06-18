@@ -6,7 +6,7 @@ spring:
   config:
     import:
       - logging.yml
-      - db-main.yml
+      - db-core.yml
 
 ---
 spring:

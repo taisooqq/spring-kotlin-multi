@@ -2,9 +2,9 @@ rootProject.name = "spring-kotlin"
 
 include(
     "hello-spring-api",
-    "jpa-test",
     "support:logging",
-    "storage:db-core"
+    "storage:db-core",
+    "domain"
 )
 
 pluginManagement {
@@ -18,6 +18,7 @@ pluginManagement {
                 "org.jetbrains.kotlin.jvm", "org.jetbrains.kotlin.plugin.spring" -> useVersion(kotlinVersion)
                 "org.jetbrains.kotlin.kapt", "org.jetbrains.kotlin.plugin.jpa" -> useVersion(kotlinVersion)
                 "org.springframework.boot" -> useVersion(springBootVersion)
+//                "org.asciidoctor.jvm.convert" -> useVersion(asciidoctorConvertVersion)
                 "io.spring.dependency-management" -> useVersion(springDependencyManagementVersion)
             }
         }
