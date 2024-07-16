@@ -1,4 +1,4 @@
-package com.expample.springkotlin.redis
+package com.example.springkotlin.redis
 
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
