@@ -1,4 +1,6 @@
 package com.example.springkotlin.domain.user
 
-class User {
-}
+data class User(
+    val id: Long,
+    val name: String
+) {}
