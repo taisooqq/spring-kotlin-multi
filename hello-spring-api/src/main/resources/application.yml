@@ -8,6 +8,8 @@ spring:
       - logging.yml
       - db-core.yml
       - redis.yml
+  cache:
+    type: redis
 
 ---
 spring:
