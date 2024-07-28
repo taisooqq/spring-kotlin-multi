@@ -7,6 +7,6 @@ allOpen {
 dependencies {
     compileOnly(project(":domain"))
 //    runtimeOnly("com.mysql:mysql-connector-j")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    api("org.springframework.boot:spring-boot-starter-data-jpa")
     runtimeOnly("com.h2database:h2")
 }
