@@ -36,6 +36,8 @@ spring.config.activate.on-profile: local-dev
 
 spring:
   jpa:
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
         show_log: true

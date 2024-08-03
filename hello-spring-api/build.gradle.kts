@@ -12,4 +12,5 @@ dependencies {
     api(project(":storage:db-core"))
     api(project(":storage:redis"))
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.assertj:assertj-core:3.24.2")
 }
