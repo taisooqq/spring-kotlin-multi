@@ -3,6 +3,7 @@ rootProject.name = "spring-kotlin"
 include(
     "hello-spring-api",
     "support:logging",
+    "support:rest-client",
     "storage:db-core",
     "storage:redis",
     "domain"
