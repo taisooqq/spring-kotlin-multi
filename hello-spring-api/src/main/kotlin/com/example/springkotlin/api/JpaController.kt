@@ -4,6 +4,7 @@ import com.example.springkotlin.storage.db.core.ExampleEntity
 import com.example.springkotlin.storage.db.core.ExampleRepository
 import org.springframework.data.domain.Example
 import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
@@ -19,5 +20,12 @@ class JpaController (
         var exampleEntity: ExampleEntity? = exampleRepository.findTopByOrderByIdDesc()
 
         return ResponseEntity.ok("jpa success")
+    }
+
+    @GetMapping("/get")
+    fun getExample(): ResponseEntity<Any> {
+        var exampleEntity: List<ExampleEntity>? = exampleRepository.findAll()
+        return ResponseEntity.ok(exampleEntity)
+
     }
 }
