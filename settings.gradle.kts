@@ -4,6 +4,7 @@ include(
     "hello-spring-api",
     "support:logging",
     "support:rest-client",
+    "support:kafka",
     "storage:db-core",
     "storage:redis",
     "domain"
