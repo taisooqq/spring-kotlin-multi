@@ -1,0 +1,5 @@
+spring:
+
+kafka:
+  #TODO 이거 제대로 입력해야함
+  bootstrap-servers: test
