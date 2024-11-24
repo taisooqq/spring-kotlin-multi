@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 @Service
 class KafkaService (
     private val kafkaTemplate: KafkaTemplate<String, String>,
-    @Value("\${kafka.topic.name}") private val topicName: String
+    @Value("\${spring.kafka.topic.name}") private val topicName: String
 ){
     fun sendMessage(message: String) {
         kafkaTemplate.send(topicName, message)
