@@ -12,4 +12,8 @@ class KafkaService (
     fun sendMessage(message: String) {
         kafkaTemplate.send(topicName, message)
     }
+
+    fun sendMessage2(message: String){
+
+    }
 }
